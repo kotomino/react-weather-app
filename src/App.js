@@ -1,13 +1,23 @@
-import React, { Component } from 'react';
-import Search from './components/Search';
+import React from 'react';
 import './App.css';
+import Home from './components/Home';
+import {
+  ApolloClient, 
+  InMemoryCache, 
+  ApolloProvider
+} from '@apollo/client'
 
 const App = () => {
+
+  const client = new ApolloClient({
+    cache: new InMemoryCache(),
+    uri: "https://graphql-weather-api.herokuapp.com/"
+  })
+
   return (
-    <div className="App">
-      Weather App
-      <Search/>
-    </div>
+    <ApolloProvider client={client}>
+      <Home/>
+    </ApolloProvider>
   );
 }
 
