@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState} from 'react';
 import WeatherInfo from './WeatherInfo';
 import {useLazyQuery} from '@apollo/client';
 import { FETCH_WEATHER_QUERY } from '../graphql/Queries';
@@ -27,16 +27,23 @@ const Home = () => {
 
   return (
     <div>
-      <h2>Weather App</h2>
-      <input
-        type="text"
-        id="search-bar"
-        placeholder="City Name"
-        name="city"
-        onChange={handleChange}
-        value={city}
-      />
-      <button onClick={handleSearch}>Search</button>
+      <h2 className="title">Weather in {city ? city: '...'}</h2>
+      <div className="search">
+        <input
+          type="text"
+          id="search-bar"
+          placeholder="City Name"
+          name="city"
+          onChange={handleChange}
+          value={city}
+          className="searchbar"
+        />
+        <button 
+          onClick={handleSearch}
+          className="button"
+        >Search
+        </button>
+      </div>
       {data && (
         <WeatherInfo data={data.getCityByName} />
       )}

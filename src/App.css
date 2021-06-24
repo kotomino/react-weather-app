@@ -36,3 +36,53 @@
     transform: rotate(360deg);
   }
 }
+
+.title {
+  margin: auto;
+  width: 30%;
+  border: 3px solid lightpink;
+  padding: 10px;
+  margin-top: 15%;
+}
+
+.search {
+  margin: auto;
+  width: 30%;
+  border: 3px solid lightpink;
+  padding: 10px;
+}
+
+.searchbar {
+  margin: auto;
+  width: 60%;
+  border: 3px solid lightpink;
+  padding: 10px;
+}
+
+.button {
+  margin: auto;
+  width: 30%;
+  border: 3px solid lightpink;
+  padding: 10px;
+}
+
+.weatherBox {
+  margin: auto;
+  width: 30%;
+  border: 3px solid lightpink;
+  padding: 10px;
+  margin-top: 3%;
+}
+
+.weatherBox p {
+  margin: auto;
+  width: 40%;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.weatherBox h3 {
+  margin: auto;
+  width: 40%;
+  padding: 10px;
+}
