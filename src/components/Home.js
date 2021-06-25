@@ -27,22 +27,24 @@ const Home = () => {
 
   return (
     <div>
-      <h2 className="title">Weather in {city ? city: '...'}</h2>
-      <div className="search">
-        <input
-          type="text"
-          id="search-bar"
-          placeholder="City Name"
-          name="city"
-          onChange={handleChange}
-          value={city}
-          className="searchbar"
-        />
-        <button 
-          onClick={handleSearch}
-          className="button"
-        >Search
-        </button>
+      <div className="topbox">
+        <h2 className="title">Weather in {city ? city: '...'}</h2>
+        <div className="search">
+          <input
+            type="text"
+            id="search-bar"
+            placeholder="City Name"
+            name="city"
+            onChange={handleChange}
+            value={city}
+            className="searchbar"
+          />
+          <button 
+            onClick={handleSearch}
+            className="button"
+          >Search
+          </button>
+        </div>
       </div>
       {data && (
         <WeatherInfo data={data.getCityByName} />
