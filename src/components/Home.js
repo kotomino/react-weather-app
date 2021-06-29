@@ -33,7 +33,7 @@ const Home = () => {
           <input
             type="text"
             id="search-bar"
-            placeholder="City Name"
+            placeholder="Enter City.."
             name="city"
             onChange={handleChange}
             value={city}

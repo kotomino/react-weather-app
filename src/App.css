@@ -37,29 +37,42 @@
   }
 }
 
-.title {
+.topbox {
   margin: auto;
-  width: 25%;
+  width: 30%;
   border: 3px solid lightpink;
   padding: 10px;
   margin-top: 15%;
   background-color: rgba(255,255,255,0.3);
+  border-radius: 50px;
+}
+
+.title {
+  margin: 2%;
+  text-align: center;
+  /* width: 25%; */
+  /* border: 3px solid lightpink; */
+  /* padding: 10px;
+  margin-top: 15%; */
+  
 }
 
 .search {
   margin: auto;
-  width: 25%;
-  border: 3px solid lightpink;
+  /* width: 25%; */
+  /* border: 3px solid lightpink; */
   padding: 10px;
-  background-color: rgba(255,255,255,0.3);
+  /* background-color: rgba(255,255,255,0.3); */
 }
 
 .searchbar {
   margin: auto;
+  margin-right: 1%;
   width: 60%;
   border: 3px solid lightpink;
   padding: 10px;
   background-color: rgba(255,255,255,0.3);
+  border-radius: 25px;
 }
 
 .button {
@@ -67,15 +80,17 @@
   width: 30%;
   border: 3px solid lightpink;
   padding: 10px;
+  border-radius: 25px;
 }
 
 .weatherBox {
   margin: auto;
-  width: 20%;
-  border: 3px solid lightpink;
+  width: 25%;
+  border: 2px solid lightpink;
   padding: 10px;
   margin-top: 3%;
   background-color: rgba(255,255,255,0.3);
+  border-radius: 50px;
 }
 
 .weatherBox p {
@@ -89,4 +104,13 @@
   margin: auto;
   width: 40%;
   padding: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+  .topbox {
+    width: 65%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+  .weatherBox {
+    width: 60%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
 }
